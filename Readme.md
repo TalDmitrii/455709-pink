@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Талицких](https://up.htmlacademy.ru/adaptive/12/user/455709).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://htmlacademy.ru/profile/id29002).
 
 ---
 
