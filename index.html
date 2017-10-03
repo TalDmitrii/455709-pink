@@ -7,54 +7,56 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="menu menu_opened">
+      <div class="menu menu_opened visually-hidden">
         <ul class="menu__navigation navigation-list">
           <li class="navigation-list__item">
-            <div class="navigation-list__top">
-              <img class="navigation-list__logo-image" src="img/logotype.svg" width="75" height="23" alt="PINK Logo">
+            <div class="navigation-list__no-fade">
+              <img class="navigation-list__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK Logo">
               <button class="menu-button" type="button">
-                <img class="menu-button__image" src="img/button-close" width="24" height="26" alt="close X">
+                <img class="menu-button__image button-cross" src="img/icon-menu-cross.svg" width="24" height="26" alt="close X">
               </button>
             </div>
           </li>
           <li class="navigation-list__item navigation-list__item_active">
-            <a>Главная</a>
+            <a class="navigation-list__link">Главная</a>
           </li>
           <li class="navigation-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="navigation-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="navigation-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="navigation-list__item">
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <a class="navigation-list__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
       <div class="menu menu_closed navigation-list">
         <div class="navigation-list__top">
-          <img class="navigation-list__logo-image" src="img/logotype.svg" width="75" height="23" alt="PINK Logo">
+          <img class="navigation-list__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK Logo">
           <button class="menu-button">
-            <img class="menu-button__image" src="img/button-burger" width="50" height="25" alt="menu-burger">
+            <img class="menu-button__image" src="img/icon-menu-burger.svg" width="50" height="25" alt="menu-burger">
           </button>
         </div>
       </div>
-      <a class="button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-      <div class="available-platform">
-        <h2 class="available-platform__header">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </h2>
-        <ul class="available-platform__list">
-          <li class="available-platform__item">
-            <img src="img/apple-logo.svg" width="48" height="58" alt="apple-logo">
-          </li>
-          <li class="available-platform__item">
-            <img src="img/android-logo.svg" width="44" height="48" alt="android-logo">
-          </li>
-          <li class="available-platform__item">
-            <img src="img/microsoft-logo.svg" width="45" height="41" alt="microsoft-logo">
-          </li>
-        </ul>
+      <div class="download">
+        <a class="button-download" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <div class="available-platform">
+          <ul class="available-platform__list">
+            <li class="available-platform__item">
+              <img src="img/logo-apple.svg" width="48" height="58" alt="apple-logo">
+            </li>
+            <li class="available-platform__item">
+              <img src="img/logo-android.svg" width="44" height="48" alt="android-logo">
+            </li>
+            <li class="available-platform__item">
+              <img src="img/logo-microsoft.svg" width="45" height="41" alt="microsoft-logo">
+            </li>
+          </ul>
+          <h2 class="available-platform__header">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </h2>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -68,34 +70,36 @@
         <p class="features__text">
           Нам есть, что предложить!
         </p>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__item-header">
-              Поднимает настроение
-            </h3>
-            <p class="features__item-text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-header">
-              Меняет мир вокруг
-            </h3>
-            <p class="features__item-text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__item-header">
-              Заводит новых друзей
-            </h3>
-            <p class="features__item-text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <div class="features__image">
-          <img src="img/iphone-screen.svg" width="160" height="278" alt="iphone-screen image">
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__item-header">
+                Поднимает настроение
+              </h3>
+              <p class="features__item-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-header">
+                Меняет мир вокруг
+              </h3>
+              <p class="features__item-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-header">
+                Заводит новых друзей
+              </h3>
+              <p class="features__item-text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="features__image">
+            <img src="img/iphone-screen-mobile@1x.png" width="160" height="278" alt="iphone-screen image">
+          </div>
         </div>
       </div>
       <h2 class="visually-hidden">
@@ -105,24 +109,30 @@
         <ul class="reviews__list">
           <li class="reviews__item">
             <h3 class="reviews__item-header">
-              Николай Петров
+              <label for="rev-btn-1">
+                Николай Петров
+              </label>
             </h3>
             <p class="reviews__item-text">
               "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
             </p>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item visually-hidden">
             <h3 class="reviews__item-header">
-              Игорь Васильев
+              <label for="rev-btn-2">
+                Игорь Васильев
+              </label>
             </h3>
             <p class="reviews__item-text">
               "Потрясающее приложение! Спасибо разработчикам!"
             </p>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item visually-hidden">
             <h3 class="reviews__item-header">
-              Егор Дмитриев
+              <label for="rev-btn-3">
+                Егор Дмитриев
+              </label>
             </h3>
             <p class="reviews__item-text">
               "Ни на один миг не пожалел потраченных денег! Рекомендую всем!"
@@ -131,11 +141,8 @@
         </ul>
         <div class="reviews__input">
           <input type="radio" id="rev-btn-1" name="toggle-reviews" checked>
-          <label for="rev-btn-1"></label>
           <input type="radio" id="rev-btn-2" name="toggle-reviews">
-          <label for="rev-btn-2"></label>
           <input type="radio" id="rev-btn-3" name="toggle-reviews">
-          <label for="rev-btn-3"></label>
         </div>
         <h2 class="visually-hidden">
           Тарифы
@@ -144,93 +151,102 @@
           <table class="price-table">
             <tr class="price-table__header">
               <th class="price-table__header-item">
-                Базовый <span>0,99 USD</span>
+                Базовый
+                <span class="price-table__item">
+                  0,99 USD
+                </span>
               </th>
               <th class="price-table__header-item">
                 <div class="price-table__header-image">
-                  <img src="img/хит.png">
+                  <img src="img/bg-hit-tablet.svg" width="73" height="73" alt="img">
                 </div>
-                Стандарт <span>3,99 USD</span>
+                Стандарт
+                  <span class="price-table__item">
+                    3,99 USD
+                  </span>
               </th>
               <th class="price-table__header-item">
-                Максимальный <span>6,99 USD</span>
+                Максимальный
+                <span class="price-table__item">
+                  6,99 USD
+                </span>
               </th>
             </tr>
             <tr class="price-table__pink-filter">
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Розовый фильтр
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Розовый фильтр
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Розовый фильтр
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
             </tr>
             <tr class="price-table__smiles">
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Смайлики
                   </p>
-                  <img src="img/no.svg">
+                  <img src="img/icon-no.svg" width="27" height="26" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Смайлики
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Смайлики
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
             </tr>
             <tr class="price-table__comments">
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Комментарии
                   </p>
-                  <img src="img/no.svg">
+                  <img src="img/icon-no.svg" width="27" height="26" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Комментарии
                   </p>
-                  <img src="img/no.svg">
+                  <img src="img/icon-no.svg" width="27" height="26" alt="img">
                 </div>
               </td>
-              <td>
+              <td class="price-table__border">
                 <div class="price-table__elem">
                   <p>
                     Комментарии
                   </p>
-                  <img src="img/yes.svg">
+                  <img src="img/icon-yes.svg" width="31" height="21" alt="img">
                 </div>
               </td>
             </tr>
@@ -247,8 +263,8 @@
       </div>
     </main>
     <footer class="page-footer">
-      <h2 class="visually-hidden">
-        Контакты
+      <h2 class="footer-header">
+        Остались вопросы? Свяжитесь с нами!
       </h2>
       <div class="contacts">
         <ul class="contacts__list">
@@ -265,7 +281,7 @@
               Пишите:
             </h3>
             <p class="contacts__item-text">
-              <a href="https://htmlacademy.ru/intensive/adaptive">mail@htmlacademy.ru</a>
+              <a class="reference" href="https://htmlacademy.ru/intensive/adaptive">mail@htmlacademy.ru</a>
             </p>
           </li>
           <li class="contacts__item">
