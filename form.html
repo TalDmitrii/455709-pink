@@ -3,54 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__header-wrapper">
         <h1 class="page-header__header">
-          Фотографии пользователей
+          Конкурс на самое безбашенное путешествие с Пинк
         </h1>
       </div>
       <div class="menu menu_opened">
         <ul class="menu__navigation navigation-list">
           <li class="navigation-list__item">
-            <div class="navigation-list__top">
-              <a href="index.html">
-                <img class="navigation-list__logo-image" src="img/logotype.svg" width="75" height="23" alt="PINK Logo">
-              </a>
+            <div class="navigation-list__no-fade">
+              <img class="navigation-list__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK Logo">
               <button class="menu-button" type="button">
-                <img class="menu-button__image" src="img/button-close" width="24" height="26" alt="close X">
+                <img class="menu-button__image button-cross" src="img/icon-menu-cross.svg" width="24" height="23" alt="close X">
               </button>
             </div>
           </li>
           <li class="navigation-list__item navigation-list__item_active">
-            <a href="index.html">Главная</a>
+            <a class="navigation-list__link">Главная</a>
           </li>
           <li class="navigation-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="navigation-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="navigation-list__item">
-            <a href="#">Конкурс</a>
+            <a class="navigation-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="navigation-list__item">
-            <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+            <a class="navigation-list__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
           </li>
         </ul>
       </div>
-      <div class="menu menu_closed navigation-list">
-        <div class="navigation-list__top">
-          <a href="index.html">
-            <img class="navigation-list__logo-image" src="img/logotype.svg" width="75" height="23" alt="PINK Logo">
-          </a>
-          <button class="menu-button">
-            <img class="menu-button__image" src="img/button-burger" width="50" height="25" alt="menu-burger">
-          </button>
+      <div class="navigation-wrapper">
+        <div class="menu menu_closed navigation-list visually-hidden">
+          <div class="navigation-list__top">
+            <img class="navigation-list__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK Logo">
+            <button class="menu-button">
+              <img class="menu-button__image" src="img/icon-menu-burger.svg" width="50" height="25" alt="menu-burger">
+            </button>
+          </div>
         </div>
       </div>
+      <div class="page-header__header-wrapper">
+        <h1 class="page-header__header">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+      </div>
     </header>
-    <main class="page-main">
-      <div class="page-main__container-text">
-        <p class="page-main__text">
+    <main class="page-main-form">
+      <div class="page-main-form__container">
+        <p class="page-main-form__text">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </p>
       </div>
@@ -62,15 +66,15 @@
           <h2 class="visually-hidden">
             Персональные данные
           </h2>
-          <label class="form__label" for="last-name">
+          <label class="form__label_red" for="last-name">
             Фамилия:
           </label>
           <input class="form__input" type="text" name="last-name" id="last-name" value="Укажите фамилию *" required>
-          <label class="form__label" for="first-name">
+          <label class="form__label_red" for="first-name">
             Имя:
           </label>
           <input class="form__input" type="text" name="first-name" id="first-name" value="Введите ваше имя *" required>
-          <label class="form__label" for="middle-name">
+          <label class="form__label_red" for="middle-name">
             Отчество:
           </label>
           <input class="form__input" type="text" name="middle-name" id="middle-name" value="Ну и отчество тоже">
@@ -108,11 +112,11 @@
           <h2 class="visually-hidden">
             Персональные данные
           </h2>
-          <label class="form__label" for="phone-number">
+          <label class="form__label_red" for="phone-number">
             Номер телефона
           </label>
           <input class="form__input" type="tel" name="phone-number" id="phone-number" value="Номер, пожалуйста">
-          <label class="form__label" for="email">
+          <label class="form__label_red" for="email">
             Адрес почты
           </label>
           <input class="form__input" type="email" name="email" id="email" value="Введите почту *" required>
@@ -121,7 +125,7 @@
           <h2 class="form__block-header">
             С каким приложением путешествовали?
           </h2>
-          <input class="form__input" type="radio" name="question-1" id="ios">
+          <input class="form__input" type="radio" name="question-1" id="ios" checked>
           <label class="form__label" for="ios">
             Pink для iOS
           </label>
@@ -136,19 +140,18 @@
         </section>
         <section class="form__comments">
           <h2 class="form__block-header">
-            <label class="form__label" for="textarea-comments">
+            <label class="form__label_red" for="textarea-comments">
               Опишите свои эмоции
             </label>
           </h2>
-          <textarea class="form__comments-textarea" name="textarea-comments" id="textarea-comments">
-            Можно прям в красках, не стесняясь в выражениях
+          <textarea class="form__comments-textarea" name="textarea-comments" id="textarea-comments" rows="5">Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </section>
         <button class="form__button" type="submit">
           Отправить форму
         </button>
         <p class="form__condition">
-          <span class="form__condition_red">*</span>-обязательные поля
+          <span class="form__condition red">*</span>-обязательные поля
         </p>
       </form>
       <div class="dialog visually-hidden">
@@ -179,19 +182,19 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer-form">
       <div class="logo-block">
-        <img src="img/logotype-blue-tablet.svg" width="62" height="44" alt="pink-logo-glasses">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="pink-logo-glasses">
       </div>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
-          <img src="img/twitter.svg" width="49" height="49" alt="twitter">
+          <img src="img/icon-twitter.svg" width="18" height="14" alt="twitter">
         </li>
         <li class="social-list__item">
-          <img src="img/facebook.svg" width="49" height="49" alt="facebook">
+          <img src="img/icon-facebook.svg" width="9" height="18" alt="facebook">
         </li>
         <li class="social-list__item">
-          <img src="img/youtube.svg" width="49" height="49" alt="youtube">
+          <img src="img/icon-youtube.svg" width="15" height="13" alt="youtube">
         </li>
       </ul>
       <article class="developed">
@@ -202,7 +205,7 @@
           Разработано
         </p>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy logo">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy logo">
         </a>
       </article>
     </footer>
